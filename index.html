@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Flip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                    <div class="navlinks">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="service.html">Services</a>
+                    </div>
+        </nav>
+        <div class="hero-copy">
+            <span class="eyebrow">Hero Carousel</span>
+            <h1>Flip through three featured images</h1>
+            <p>Enjoy a clean hero section where each image flips in from the right or left, one after another.</p>
+            <a class="button" href="#gallery">Discover more</a>
+        </div>
+        <img src ="images/edit-of-gamegirl.png" alt="Hero Image" class="hero-image">
+        <div class="hero-slider" id="gallery">
+            <div class="hero-slide slide-right" style="background-image: url('images/tropical forest.png');">
+                <div class="slide-text">
+                    <strong>Data Analytics</strong>
+                    <p>Bold visual storytelling for modern teams.</p>
+                </div>
+            </div>
+            <div class="hero-slide slide-left" style="background-image: url('images/grass bike picture.jpeg');">
+                <div class="slide-text">
+                    <strong>Creative Banner</strong>
+                    <p>Stylish design that flips your attention.</p>
+                </div>
+            </div>
+            <div class="hero-slide slide-right" style="background-image: url('images/messi picture.png');">
+                <div class="slide-text">
+                    <strong>Modern Look</strong>
+                    <p>Clean layout with motion that feels premium.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <marquee class="marquee-text" direction="right">CONNECTING THE WORLD THROUGH GLOBAL TECHNOLOGY</marquee>
+
+    <div class="image-marquee">
+        <div class="image-track">
+            <img src="images/messi picture.png" class="gallery-image">
+            <img src="images/messi picture.png" class="gallery-image">
+            <img src="images/messi picture.png" class="gallery-image">
+            <img src="images/messi picture.png" class="gallery-image">
+            <img src="images/messi picture.png" class="gallery-image">
+
+            <!-- duplicate images for smooth loop -->
+            <img src="images/grass bike picture.jpeg" class="gallery-image">
+            <img src="images/grass bike picture.jpeg" class="gallery-image">
+            <img src="images/grass bike picture.jpeg" class="gallery-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
